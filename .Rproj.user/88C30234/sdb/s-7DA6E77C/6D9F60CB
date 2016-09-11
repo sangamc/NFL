@@ -1,14 +1,14 @@
 {
     "collab_server" : "",
-    "contents" : "require(splitstackshape) # required for csplit\nrequire(XML)\nrequire(data.table)\nrequire(dplyr)\nrequire(RCurl)\n\n\n#\n## DK Salaries \n#\nSalaries <- data.frame()\nSalaries <- read.csv(\"DKSalaries.csv\", encoding = \"UTF-8\")\ncolnames(Salaries)[1] <- \"Pos\"\ncolnames(Salaries)[4] <- \"Game Time\"\ncolnames(Salaries)[5] <- \"Avg\"\ncolnames(Salaries)[6] <- \"Team\"\nSalaries <- cSplit(Salaries, c(\"Game Time\"), c(\" \"))\nSalaries <- subset(Salaries, select = -c(`Game Time_3`))\ncolnames(Salaries)[6] <- \"Game\"\ncolnames(Salaries)[7] <- \"Time\"\nSalaries <- subset(Salaries, select = c(\"Name\", \"Salary\", \"Pos\", \"Team\", \"Avg\", \"Game\", \"Time\"))\n",
+    "contents" : "require(splitstackshape) # required for csplit\nrequire(XML)\nrequire(data.table)\nrequire(dplyr)\nrequire(RCurl)\n\n\n#\n## DK Salaries \n#\nSalaries <- data.frame()\nSalaries <- read.csv(\"DKSalaries.csv\", encoding = \"UTF-8\")\ncolnames(Salaries)[1] <- \"Pos\"\ncolnames(Salaries)[4] <- \"Game Time\"\ncolnames(Salaries)[5] <- \"Avg\"\ncolnames(Salaries)[6] <- \"Team\"\nSalaries <- cSplit(Salaries, c(\"Game Time\"), c(\" \"))\nSalaries <- subset(Salaries, select = -c(`Game Time_3`))\ncolnames(Salaries)[6] <- \"Game\"\ncolnames(Salaries)[7] <- \"Time\"\nSalaries <- subset(Salaries, select = c(\"Name\", \"Salary\", \"Pos\", \"Team\", \"Avg\", \"Game\", \"Time\"))\n\n#\n## FFanalytics Projections\n#\nprojections <- data.frame()\nprojections <- read.csv(\"data/projection.csv\", encoding = \"UTF-8\")\nprojections <- subset(projections[ ,c(1,2,3,7,11,14,18:20)])\ncolnames(projections)[1] <- \"Name\"\ndf <- merge(Salaries, projections, by=c(\"Name\"),all.x = TRUE)\n",
     "created" : 1473553470295.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "4280782461",
+    "hash" : "1731809027",
     "id" : "6D9F60CB",
-    "lastKnownWriteTime" : 1473553845,
-    "last_content_update" : 1473553845968,
+    "lastKnownWriteTime" : 1473556618,
+    "last_content_update" : 1473556618619,
     "path" : "~/R/NFL/Scripts/DKSalaries.R",
     "project_path" : "Scripts/DKSalaries.R",
     "properties" : {

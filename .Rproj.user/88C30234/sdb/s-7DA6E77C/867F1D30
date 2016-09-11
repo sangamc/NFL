@@ -1,0 +1,28 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1473555994684.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "867F1D30",
+    "lastKnownWriteTime" : 32370120545140837,
+    "last_content_update" : 1473555994684,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "dbd3eogqfr",
+        "caption" : "projections",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=projections&cache_key=dbd3eogqfr",
+        "displayedObservations" : 888,
+        "environment" : "",
+        "object" : "projections",
+        "totalObservations" : 888,
+        "variables" : 21
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}
