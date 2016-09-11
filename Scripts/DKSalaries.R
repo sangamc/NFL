@@ -25,6 +25,8 @@ Salaries <- subset(Salaries, select = c("Name", "Salary", "Pos", "Team", "Avg", 
 #
 projections <- data.frame()
 projections <- read.csv("data/projection.csv", encoding = "UTF-8")
-projections <- subset(projections[ ,c(1,2,3,7,11,14,18:20)])
+projections <- subset(projections[ ,c(1,7,11,14,18:20)])
 colnames(projections)[1] <- "Name"
-df <- merge(Salaries, projections, by=c("Name"),all.x = TRUE)
+
+df <- merge(Salaries, projections, by=c("Name"))
+
