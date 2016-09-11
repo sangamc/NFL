@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "require(splitstackshape) # required for csplit\nrequire(XML)\nrequire(data.table)\nrequire(dplyr)\nrequire(RCurl)\n\n\n#\n## DK Salaries \n#\nSalaries <- data.frame()\nSalaries <- read.csv(\"DKSalaries.csv\", encoding = \"UTF-8\")\ncolnames(Salaries)[1] <- \"Pos\"\ncolnames(Salaries)[4] <- \"Game Time\"\ncolnames(Salaries)[5] <- \"Avg\"\ncolnames(Salaries)[6] <- \"Team\"\nSalaries <- cSplit(Salaries, c(\"Game Time\"), c(\" \"))\nSalaries <- subset(Salaries, select = -c(`Game Time_3`))\ncolnames(Salaries)[6] <- \"Game\"\ncolnames(Salaries)[7] <- \"Time\"\nSalaries <- subset(Salaries, select = c(\"Name\", \"Salary\", \"Pos\", \"Team\", \"Avg\", \"Game\", \"Time\"))\n",
+    "created" : 1473553470295.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4280782461",
+    "id" : "6D9F60CB",
+    "lastKnownWriteTime" : 1473553845,
+    "last_content_update" : 1473553845968,
+    "path" : "~/R/NFL/Scripts/DKSalaries.R",
+    "project_path" : "Scripts/DKSalaries.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

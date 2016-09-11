@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "#.Rproj.user\n#.Rhistory\n#.RData\n#.Ruserdata\n*.lnk",
+    "created" : 1473554586212.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2916597055",
+    "id" : "B941097E",
+    "lastKnownWriteTime" : 1473554595,
+    "last_content_update" : 1473554595870,
+    "path" : "~/R/NFL/.gitignore",
+    "project_path" : ".gitignore",
+    "properties" : {
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "gitignore"
+}
