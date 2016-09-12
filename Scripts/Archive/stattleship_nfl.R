@@ -3,7 +3,7 @@ require(stattleshipR)
 require(dplyr)
 require(ggplot2)
 
-set_token("1fcd74340384cb432a8157b7fdccef07")
+source("scripts/stattleship_token.r")
 
 # Player game logs ----
 sport <- 'football'  
