@@ -29,4 +29,3 @@ projections <- subset(projections[ ,c(1,7,11,14,18:20)])
 colnames(projections)[1] <- "Name"
 
 df <- merge(Salaries, projections, by=c("Name"))
-

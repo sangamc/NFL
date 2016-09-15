@@ -1,6 +1,10 @@
 {
-    "path" : "~/R/NFL",
+    "path" : "~/R/NFL/Scripts/Archive",
     "sortOrder" : [
+        {
+            "ascending" : false,
+            "columnIndex" : 4
+        },
         {
             "ascending" : true,
             "columnIndex" : 2
