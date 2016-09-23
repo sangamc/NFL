@@ -1,5 +1,5 @@
 dataSites <- list(
-######
+###### CBS ----
   cbs = list(name = "CBS",
              weekUrl = "http://fantasynews.cbssports.com/fantasyfootball/stats/weeklyprojections/{$Pos}/{$WeekNo}/{$SrcID}/standard?&print_rows=9999",
              seasonUrl = "http://fantasynews.cbssports.com/fantasyfootball/stats/weeklyprojections/{$Pos}/season/{$SrcID}/standard?&print_rows=9999",
@@ -68,7 +68,7 @@ dataSites <- list(
                  )
              )
              ),
-##### 
+##### Yahoo ----
 yahoo = list(name = "Yahoo",
                weekUrl = "http://football.fantasysports.yahoo.com/f1/39345/players?status=A&pos={$Pos}&cut_type=9&stat1=S_PW_{$WeekNo}&myteam=0&sort=PTS&sdir=1&count={$PgeID}",
                seasonUrl = "http://football.fantasysports.yahoo.com/f1/39345/players?&sort=PTS&sdir=1&status=A&pos={$Pos}&cut_type=9&stat1=S_PS_{$Season}&jsenabled=1&count={$PgeID}",
@@ -145,7 +145,7 @@ yahoo = list(name = "Yahoo",
                  )
                )
   ),
-#####
+##### ESPN ----
 espn = list(name = "ESPN",
             weekUrl = "http://games.espn.go.com/ffl/tools/projections?&slotCategoryId={$PosID}&scoringPeriodId={$WeekNo}&seasonId={$Season}&startIndex={$PgeID}",
             seasonUrl = "http://games.espn.go.com/ffl/tools/projections?&seasonTotals=true&seasonId={$Season}&slotCategoryId={$PosID}&startIndex={$PgeID}",
@@ -194,7 +194,7 @@ espn = list(name = "ESPN",
               )
               )
 ),
-#####
+##### NFL ----
 nfl = list(name = "NFL",
            weekUrl ="http://fantasy.nfl.com/research/projections?position={$PosID}&sort=projectedPts&statCategory=projectedStats&statSeason={$Season}&statType=weekProjectedStats&offset={$PgeID}&statweek={$WeekNo}",
            seasonUrl ="http://fantasy.nfl.com/research/projections?position={$PosID}&sort=projectedPts&statCategory=projectedStats&statSeason={$Season}&statType=seasonProjectedStats&offset={$PgeID}",
@@ -263,7 +263,7 @@ nfl = list(name = "NFL",
              )
              )
   ),
-#####
+##### FOX ----
 fox = list(name = "FOX",
            weekUrl = "http://www.foxsports.com/fantasy/football/commissioner/Research/Projections.aspx?page={$PgeID}&position={$PosID}&split=4&playerSearchStatus=1",
            seasonUrl = "http://www.foxsports.com/fantasy/football/commissioner/Research/Projections.aspx?page={$PgeID}&position={$PosID}&split=3&playerSearchStatus=1",
@@ -332,7 +332,7 @@ fox = list(name = "FOX",
              )
              )
   ),
-#####
+##### FFToday ----
 fft = list(name = "FFToday",
            weekUrl = "http://www.fftoday.com/rankings/playerwkproj.php?Season={$Season}&GameWeek={$WeekNo}&LeaugeID=1&PosID={$PosID}&cur_page={$PgeID}",
            seasonUrl = "http://www.fftoday.com/rankings/playerproj.php?Season={$Season}&LeaugeID=1&PosID={$PosID}&cur_page={$PgeID}",
@@ -401,6 +401,7 @@ fft = list(name = "FFToday",
            )
            )
 ),
+## Numberfire ----
 nmf = list(name = "NumberFire",
            weekUrl = "http://www.numberfire.com/nfl/fantasy/fantasy-football-projections/{$PosID}",
            seasonUrl = NA,
@@ -469,7 +470,7 @@ nmf = list(name = "NumberFire",
              )
              )
   ),
-#####
+##### Fantasy pros ----
 ffp = list(name = "FantasyPros",
            weekUrl = "http://www.fantasypros.com/nfl/projections/{$PosID}",
            seasonUrl = NA,
@@ -528,6 +529,7 @@ ffp = list(name = "FantasyPros",
              )
            )
 ),
+## Footballguys ----
 fbg = list(name = "Footballguys",
            weekUrl = "http://subscribers.footballguys.com/myfbg/myweeklycheatsheet.php?who={$SrcID}&pos={$PosID}&profile=0&week={$WeekNo}",
            seasonUrl = "http://subscribers.footballguys.com/myfbg/myviewprojections.php?projforwhat={$PosID}&projector={$SrcID}&profile=0",
